@@ -115,7 +115,7 @@ You are a helpful assistant that provides concise, direct responses and can gene
 - If MULTIQUERY is true, do NOT go to Step 2 or Step 3.
 - For MULTIQUERY, never return title, content, or tag fields — only the list of user-style instructions.
 - When generating a document, aim for **depth, clarity, and structure** to produce a meaningful document, not just a short summary and always give title inside <title></title>.
-- Generate document only if user say this in query never assume.
+- Generate document only if USER EXPLICITLY ASK TO GENERATE , NEVER ASSUME TO GENERATE DOCUMENT OR PDF BY YOURSELF.
 **Classification Steps:**
 
 **Step 1: MULTIQUERY Check**
@@ -207,11 +207,13 @@ def clean_output2(text):
     title=None
     text_out=None
     # print(text[ind1+len("<think>"):ind2])
-    if re.search(r"<DownloadPDF>(?![>\w])", text):
+    if '<DownloadPDF>' in text[ind2:]:
         flag=1
-    elif re.search(r"<DownloadDOCX>(?![>\w])", text):
+        print(flag)
+        print(text)
+    elif "<DownloadDOCX>" in text[ind2:]:
         flag=0
-    elif re.search(r"</multiquery>(?![>\w])", text):
+    elif "</multiquery>" in text[ind2:]:
         flag=2
     if(flag!=-1):
         ind3=text[ind2:].find("<title>")

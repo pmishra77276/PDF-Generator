@@ -92,6 +92,11 @@ try:
         with st.sidebar:
             st.title("Your Files")
             for i in range(len(st.session_state.files)):
+                
+                
+                print(st.session_state.files[i])
+                
+                
                 if(st.session_state.files[i][1]=='pdf'):
                     st.session_state.de.append(st.download_button(
                         f"{st.session_state.files[i][0]} download button",
@@ -141,25 +146,26 @@ try:
             
             st.session_state.files=[]
             ut.output(model,tok,st.session_state.chats)
-            if(len(st.session_state.files)!=1):
-                with st.sidebar:
-                    st.title("Your Files")
-                    for i in range(len(st.session_state.files)):
-                        if(st.session_state.files[i][1]=='pdf'):
-                            st.session_state.de.append(st.download_button(
-                                f"{st.session_state.files[i][0]} download button",
-                                data=create_pdf_bytes(st.session_state.files[i][2],st.session_state.files[i][0]),
-                                file_name=f"{st.session_state.files[i][0]}.pdf",
-                                key=i
-                            ))
-                        else:
-                            st.session_state.de.append(st.download_button(
-                                f"{st.session_state.files[i][0]} download button",
-                                data=doc_creation(st.session_state.files[i][2],st.session_state.files[i][0]),
-                                file_name=f"{st.session_state.files[i][0]}.docx",
-                                key=i
-                            ))
             st.session_state.chats=""
+            # if(len(st.session_state.files)!=1):
+            #     with st.sidebar:
+            #         st.title("Your Files")
+            #         for i in range(len(st.session_state.files)):
+            #             if(st.session_state.files[i][1]=='pdf'):
+            #                 st.session_state.de.append(st.download_button(
+            #                     f"{st.session_state.files[i][0]} download button",
+            #                     data=create_pdf_bytes(st.session_state.files[i][2],st.session_state.files[i][0]),
+            #                     file_name=f"{st.session_state.files[i][0]}.pdf",
+            #                     key=i
+            #                 ))
+            #             else:
+            #                 st.session_state.de.append(st.download_button(
+            #                     f"{st.session_state.files[i][0]} download button",
+            #                     data=doc_creation(st.session_state.files[i][2],st.session_state.files[i][0]),
+            #                     file_name=f"{st.session_state.files[i][0]}.docx",
+            #                     key=i
+            #                 ))
+            # st.session_state.chats=""
             st.rerun()
     else:
         st.rerun()
