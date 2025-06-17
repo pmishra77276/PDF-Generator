@@ -1,0 +1,153 @@
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to false.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8504
+  Network URL: http://192.168.100.66:8504
+  External URL: http://122.166.254.174:8504
+
+2025-06-17 14:48:15.998 Examining the path of torch.classes raised:
+Traceback (most recent call last):
+  File "/home/miphi/.local/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 347, in run
+    if asyncio.get_running_loop().is_running():
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/miphi/.local/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 217, in get_module_paths
+    potential_paths = extract_paths(module)
+  File "/home/miphi/.local/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 210, in <lambda>
+    lambda m: list(m.__path__._path),
+  File "/home/miphi/.local/lib/python3.10/site-packages/torch/_classes.py", line 13, in __getattr__
+    proxy = torch._C._get_custom_class_python_wrapper(self.name, attr)
+RuntimeError: Tried to instantiate class '__path__._path', but it does not exist! Ensure that it is registered via torch::class_
+Unrecognized keys in `rope_scaling` for 'rope_type'='yarn': {'attn_factor'}
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.04s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.60s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.67s/it]
+2025-06-17 14:48:36.905 Examining the path of torch.classes raised:
+Traceback (most recent call last):
+  File "/home/miphi/.local/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 347, in run
+    if asyncio.get_running_loop().is_running():
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/miphi/.local/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 217, in get_module_paths
+    potential_paths = extract_paths(module)
+  File "/home/miphi/.local/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 210, in <lambda>
+    lambda m: list(m.__path__._path),
+  File "/home/miphi/.local/lib/python3.10/site-packages/torch/_classes.py", line 13, in __getattr__
+    proxy = torch._C._get_custom_class_python_wrapper(self.name, attr)
+RuntimeError: Tried to instantiate class '__path__._path', but it does not exist! Ensure that it is registered via torch::class_
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+2025-06-17 15:03:18.574 Examining the path of torch.classes raised:
+Traceback (most recent call last):
+  File "/home/miphi/.local/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 347, in run
+    if asyncio.get_running_loop().is_running():
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/miphi/.local/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 217, in get_module_paths
+    potential_paths = extract_paths(module)
+  File "/home/miphi/.local/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 210, in <lambda>
+    lambda m: list(m.__path__._path),
+  File "/home/miphi/.local/lib/python3.10/site-packages/torch/_classes.py", line 13, in __getattr__
+    proxy = torch._C._get_custom_class_python_wrapper(self.name, attr)
+RuntimeError: Tried to instantiate class '__path__._path', but it does not exist! Ensure that it is registered via torch::class_
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+convert /tmp/tmp_n788ufu/Micromax Information Technology Overview.docx -> /tmp/tmp_n788ufu/Micromax Information Technology Overview.pdf using filter : writer_pdf_Export
+2025-06-17 15:06:47.193 Examining the path of torch.classes raised:
+Traceback (most recent call last):
+  File "/home/miphi/.local/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 347, in run
+    if asyncio.get_running_loop().is_running():
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/miphi/.local/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 217, in get_module_paths
+    potential_paths = extract_paths(module)
+  File "/home/miphi/.local/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 210, in <lambda>
+    lambda m: list(m.__path__._path),
+  File "/home/miphi/.local/lib/python3.10/site-packages/torch/_classes.py", line 13, in __getattr__
+    proxy = torch._C._get_custom_class_python_wrapper(self.name, attr)
+RuntimeError: Tried to instantiate class '__path__._path', but it does not exist! Ensure that it is registered via torch::class_
+convert /tmp/tmp3oxaslb9/Micromax Information Technology Overview.docx -> /tmp/tmp3oxaslb9/Micromax Information Technology Overview.pdf using filter : writer_pdf_Export
+convert /tmp/tmpmdi3_8xu/Micromax Information Technology Overview.docx -> /tmp/tmpmdi3_8xu/Micromax Information Technology Overview.pdf using filter : writer_pdf_Export
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+convert /tmp/tmpzql6ekyz/Noida City Guide.docx -> /tmp/tmpzql6ekyz/Noida City Guide.pdf using filter : writer_pdf_Export
+convert /tmp/tmpomgmq2tk/Comprehensive Guide to Delhi.docx -> /tmp/tmpomgmq2tk/Comprehensive Guide to Delhi.pdf using filter : writer_pdf_Export
+convert /tmp/tmp4xvw3bxb/Noida City Guide.docx -> /tmp/tmp4xvw3bxb/Noida City Guide.pdf using filter : writer_pdf_Export
+convert /tmp/tmponeafsg4/Comprehensive Guide to Delhi.docx -> /tmp/tmponeafsg4/Comprehensive Guide to Delhi.pdf using filter : writer_pdf_Export
+convert /tmp/tmpf3axcesi/Noida City Guide.docx -> /tmp/tmpf3axcesi/Noida City Guide.pdf using filter : writer_pdf_Export
+convert /tmp/tmpa_cym6iy/Comprehensive Guide to Delhi.docx -> /tmp/tmpa_cym6iy/Comprehensive Guide to Delhi.pdf using filter : writer_pdf_Export
+convert /tmp/tmp5slzqhml/Noida City Guide.docx -> /tmp/tmp5slzqhml/Noida City Guide.pdf using filter : writer_pdf_Export
+convert /tmp/tmplk1hg5bg/Comprehensive Guide to Delhi.docx -> /tmp/tmplk1hg5bg/Comprehensive Guide to Delhi.pdf using filter : writer_pdf_Export
+convert /tmp/tmpl6gh31yt/Noida City Guide.docx -> /tmp/tmpl6gh31yt/Noida City Guide.pdf using filter : writer_pdf_Export
+convert /tmp/tmpxvnv6nj4/Comprehensive Guide to Delhi.docx -> /tmp/tmpxvnv6nj4/Comprehensive Guide to Delhi.pdf using filter : writer_pdf_Export
+convert /tmp/tmpj_1z14p8/Noida City Guide.docx -> /tmp/tmpj_1z14p8/Noida City Guide.pdf using filter : writer_pdf_Export
+convert /tmp/tmpdmc8tef1/Comprehensive Guide to Delhi.docx -> /tmp/tmpdmc8tef1/Comprehensive Guide to Delhi.pdf using filter : writer_pdf_Export
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+convert /tmp/tmp54ovr987/.docx -> /tmp/tmp54ovr987/.docx.pdf using filter : writer_pdf_Export
+2025-06-17 15:15:41.090 Examining the path of torch.classes raised:
+Traceback (most recent call last):
+  File "/home/miphi/.local/lib/python3.10/site-packages/streamlit/web/bootstrap.py", line 347, in run
+    if asyncio.get_running_loop().is_running():
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/miphi/.local/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 217, in get_module_paths
+    potential_paths = extract_paths(module)
+  File "/home/miphi/.local/lib/python3.10/site-packages/streamlit/watcher/local_sources_watcher.py", line 210, in <lambda>
+    lambda m: list(m.__path__._path),
+  File "/home/miphi/.local/lib/python3.10/site-packages/torch/_classes.py", line 13, in __getattr__
+    proxy = torch._C._get_custom_class_python_wrapper(self.name, attr)
+RuntimeError: Tried to instantiate class '__path__._path', but it does not exist! Ensure that it is registered via torch::class_
+convert /tmp/tmpej4txpm1/.docx -> /tmp/tmpej4txpm1/.docx.pdf using filter : writer_pdf_Export
+convert /tmp/tmp1wi0an7t/.docx -> /tmp/tmp1wi0an7t/.docx.pdf using filter : writer_pdf_Export
+convert /tmp/tmpdilny1rg/.docx -> /tmp/tmpdilny1rg/.docx.pdf using filter : writer_pdf_Export
+convert /tmp/tmpygmy5vzk/.docx -> /tmp/tmpygmy5vzk/.docx.pdf using filter : writer_pdf_Export
+convert /tmp/tmpdgdw10_2/.docx -> /tmp/tmpdgdw10_2/.docx.pdf using filter : writer_pdf_Export
+convert /tmp/tmpyee2k1cb/.docx -> /tmp/tmpyee2k1cb/.docx.pdf using filter : writer_pdf_Export
+convert /tmp/tmpetdvjga4/.docx -> /tmp/tmpetdvjga4/.docx.pdf using filter : writer_pdf_Export
+convert /tmp/tmp4jvtmeoj/.docx -> /tmp/tmp4jvtmeoj/.docx.pdf using filter : writer_pdf_Export
+convert /tmp/tmpofjtme0r/.docx -> /tmp/tmpofjtme0r/.docx.pdf using filter : writer_pdf_Export
+convert /tmp/tmpteie1h7c/.docx -> /tmp/tmpteie1h7c/.docx.pdf using filter : writer_pdf_Export
+2025-06-17 15:15:51.792 MediaFileHandler: Missing file 93c56e9984ff3fa0d32d2afb914a1b6da0fe6bab89b02c4075fdde65.bin
+convert /tmp/tmppughurmm/.docx -> /tmp/tmppughurmm/.docx.pdf using filter : writer_pdf_Export
+convert /tmp/tmp3l97e8tz/.docx -> /tmp/tmp3l97e8tz/.docx.pdf using filter : writer_pdf_Export
+convert /tmp/tmpn081nnds/.docx -> /tmp/tmpn081nnds/.docx.pdf using filter : writer_pdf_Export
+convert /tmp/tmpa3r37x8q/.docx -> /tmp/tmpa3r37x8q/.docx.pdf using filter : writer_pdf_Export
+convert /tmp/tmps0uhfwjw/.docx -> /tmp/tmps0uhfwjw/.docx.pdf using filter : writer_pdf_Export
+2025-06-17 15:15:57.223 MediaFileHandler: Missing file 0d890d52aa5ed0be11385cc5d7412c05843e326b0b0b22cb073d1763.bin
+convert /tmp/tmppj3n4trn/.docx -> /tmp/tmppj3n4trn/.docx.pdf using filter : writer_pdf_Export
+convert /tmp/tmpvdh0y6pk/.docx -> /tmp/tmpvdh0y6pk/.docx.pdf using filter : writer_pdf_Export
+convert /tmp/tmpwqzudr9v/.docx -> /tmp/tmpwqzudr9v/.docx.pdf using filter : writer_pdf_Export
+convert /tmp/tmpzls3knrb/.docx -> /tmp/tmpzls3knrb/.docx.pdf using filter : writer_pdf_Export
+convert /tmp/tmplxwx0k6g/.docx -> /tmp/tmplxwx0k6g/.docx.pdf using filter : writer_pdf_Export
+convert /tmp/tmpqlq4jopk/.docx -> /tmp/tmpqlq4jopk/.docx.pdf using filter : writer_pdf_Export
+convert /tmp/tmpuzc2p1tv/.docx -> /tmp/tmpuzc2p1tv/.docx.pdf using filter : writer_pdf_Export
+convert /tmp/tmp28cumgey/.docx -> /tmp/tmp28cumgey/.docx.pdf using filter : writer_pdf_Export
+convert /tmp/tmpvrrjdkyi/.docx -> /tmp/tmpvrrjdkyi/.docx.pdf using filter : writer_pdf_Export
+convert /tmp/tmp0cqamk12/.docx -> /tmp/tmp0cqamk12/.docx.pdf using filter : writer_pdf_Export
+convert /tmp/tmp0105_dps/.docx -> /tmp/tmp0105_dps/.docx.pdf using filter : writer_pdf_Export
+convert /tmp/tmp6mbufb0o/.docx -> /tmp/tmp6mbufb0o/.docx.pdf using filter : writer_pdf_Export
+convert /tmp/tmptt_8lmaz/.docx -> /tmp/tmptt_8lmaz/.docx.pdf using filter : writer_pdf_Export
+convert /tmp/tmpqq_9fqyd/.docx -> /tmp/tmpqq_9fqyd/.docx.pdf using filter : writer_pdf_Export
+convert /tmp/tmp_u2w1gfe/.docx -> /tmp/tmp_u2w1gfe/.docx.pdf using filter : writer_pdf_Export
+convert /tmp/tmpjry9txq9/.docx -> /tmp/tmpjry9txq9/.docx.pdf using filter : writer_pdf_Export
