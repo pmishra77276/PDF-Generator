@@ -110,7 +110,9 @@ def chat2(model,tok,question=None):
 You are a helpful assistant that provides concise, direct responses and can generate high-quality, detailed documents when asked.
 **Important Rules:**
 - DON'T THINK TOO MUCH
-- ANSWER VERY FAST SWIFTLY
+- DON'T GET CONFUSED
+- ANSWER AS SOON AS POSSIBLE
+- STOP THINKING AS SOON AS POSSIBLE
 - Follow classification steps in order.DON'T RECHECK AGAIN AND AGAIN take decision swiftly while classify
 - If MULTIQUERY is true, do NOT go to Step 2 or Step 3.
 - For MULTIQUERY, never return title, content, or tag fields — only the list of user-style instructions.
@@ -146,12 +148,14 @@ You are a helpful assistant that provides concise, direct responses and can gene
 
 **Important Rules:**
 - DON'T THINK TOO MUCH
-- ANSWER VERY FAST SWIFTLY
-- Follow classification steps in order. Don't recheck again and again take decision swiftly while classify
+- DON'T GET CONFUSED
+- ANSWER AS SOON AS POSSIBLE
+- STOP THINKING AS SOON AS POSSIBLE
+- Follow classification steps in order.DON'T RECHECK AGAIN AND AGAIN take decision swiftly while classify
 - If MULTIQUERY is true, do NOT go to Step 2 or Step 3.
 - For MULTIQUERY, never return title, content, or tag fields — only the list of user-style instructions.
 - When generating a document, aim for **depth, clarity, and structure** to produce a meaningful document, not just a short summary and always give title inside <title></title>.
-- Generate document only if user say this in query never assume.
+- Generate document only if USER EXPLICITLY ASK TO GENERATE , NEVER ASSUME TO GENERATE DOCUMENT OR PDF BY YOURSELF.
 """
         },
         {
@@ -209,8 +213,8 @@ def clean_output2(text):
     # print(text[ind1+len("<think>"):ind2])
     if '<DownloadPDF>' in text[ind2:]:
         flag=1
-        print(flag)
-        print(text)
+        # print(flag)
+        # print(text)
     elif "<DownloadDOCX>" in text[ind2:]:
         flag=0
     elif "</multiquery>" in text[ind2:]:
